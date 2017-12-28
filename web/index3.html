@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YAM! Yerli Arama Motoru</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stil.css" />
+    </head>
+    <body>
+    <div id="page">
+        <div class="menu">
+            <li><a href="index.html">Soru 1</a></li>
+            <li><a href="index2.html">Soru 2</a></li>
+            <li><a href="index3.html">Soru 3 ve 4</a></li>
+        </div>
+        
+        <div class="search">
+            <div class="logo"></div>
+            <form action="cevap3.jsp" class="form2" method="POST">
+                <textarea name="kelimeler" class="kelimeler_cubugu" placeholder="kelime kümesi" rows="4" cols="20"></textarea>
+                <textarea name="urller" class="urller_cubugu" placeholder="url kümesi" rows="4" cols="20"></textarea>
+                <br />
+                <div class="sinirlar">
+                    2. derinlik için URL sınırı:
+                    <select name="derinlik2">
+                        <option>2</option>
+                        <option>4</option>
+                        <option selected="selected">6</option>
+                        <option>8</option>
+                        <option>10</option>
+                        <option>12</option>
+                        <option>14</option>
+                        <option>16</option>
+                        <option>18</option>
+                        <option>20</option>
+                        <option>22</option>
+                        <option>24</option>
+                        <option>26</option>
+                        <option>28</option>
+                        <option>30</option>
+                    </select>
+                    3. derinlik için URL sınırı:
+                    <select name="derinlik3">
+                        <option>2</option>
+                        <option>4</option>
+                        <option selected="selected">6</option>
+                        <option>8</option>
+                        <option>10</option>
+                        <option>12</option>
+                        <option>14</option>
+                        <option>16</option>
+                        <option>18</option>
+                        <option>20</option>
+                        <option>22</option>
+                        <option>24</option>
+                        <option>26</option>
+                        <option>28</option>
+                        <option>30</option>
+                    </select>
+                    <br />
+                    <div class="bilgi"><i style="margin-top: 10px;">Heroku'nun 30 saniye request sınırı var.</i></div>
+                </div>
+                <br /><input type="submit" value="Ara" class="arama_butonu" />
+            </form> 
+        </div>
+    </div>
+    </body>
+</html>
